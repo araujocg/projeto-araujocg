@@ -1,0 +1,13 @@
+body{
+    background-image: url(../imagens/background-joji.jpg);
+    background-size:cover;
+}
+div{
+    background-image: url(../imagens/background-joji.jpg);
+    background-repeat:no-repeat;
+    background-image:none;
+    width:311px;
+    margin-top:5%;
+    margin-left:40%;
+
+}
