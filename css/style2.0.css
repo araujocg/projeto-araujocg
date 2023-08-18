@@ -15,11 +15,11 @@ body{
     background: url(../imagens/background-joji.jpg) no-repeat top center;
     background-size:cover;
 }
-#background-video {
-    display:none;
-    position:fixed;
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
 }
-
 section#cell{
     position:absolute;
     top:50%;
@@ -46,12 +46,13 @@ iframe#tela{
 }
 .icone:hover{
     border:1px solid rgba(255, 255, 255, 0.466);
-    transform: translate(-2px, 0px);
+    transform: translate(2px, 0px);
     transition: transform 0.2s, border .5s;
 }
 #redes-soci{
-    position: absolute;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items:end;
+    position: absolute;
+    z-index: 1;
 }
