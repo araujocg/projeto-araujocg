@@ -1,26 +1,26 @@
 @charset "UTF-8";
+
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
 }
-main{
-    height: 100vh;
-    width:100vw;
-}
+
 html, body{
     height:100vh;
-    width:100vw;
-    background-color:black;
+    background-color:rgb(255, 255, 255);
+    overflow-y: hidden;
 }
-body{
+
+main{
+    height:100vh;
     background: url(../imagens/background-joji.jpg) no-repeat top center;
     background-size:cover;
 }
 video {
-    width:100vw;
-    height:99vh;
-    object-fit:cover;
+    height:100vh;
+    width:100%;
+    object-fit:fill;
 }
 section#cell{
     position:absolute;
@@ -38,8 +38,13 @@ iframe#tela{
     width:270px;
     height:500px;
 }
+
+section#redes-soci{
+    position: fixed;
+    z-index: 1;
+}
+
 .icone {
-    position:relative;
     width:50px;
     margin:10px;
     border-radius:50%;
@@ -50,11 +55,4 @@ iframe#tela{
     border:1px solid rgba(255, 255, 255, 0.466);
     transform: translate(2px, 0px);
     transition: transform 0.2s, border .5s;
-}
-#redes-soci{
-    display: flex;
-    flex-direction:column;
-    align-items:end;
-    position: absolute;
-    z-index: 2;
 }
